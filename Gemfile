@@ -51,6 +51,12 @@ group :development, :test do
 
   # A RuboCop extension focused on enforcing Rails best practices and coding conventions. [https://docs.rubocop.org/rubocop-rails/cops_rails.html]
   gem 'rubocop-rails', require: false
+
+  # RSpec testing framework for Ruby on Rails [https://github.com/rspec/rspec-rails]
+  gem 'rspec-rails', '~> 7.0.0'
+
+  # factory_bot is a fixtures replacement [https://github.com/thoughtbot/factory_bot_rails]
+  gem 'factory_bot_rails', '~> 6.4'
 end
 
 group :development do
@@ -62,6 +68,9 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
   gem 'selenium-webdriver'
+  # Database Cleaner is a set of gems containing strategies for cleaning your database in Ruby. [https://github.com/DatabaseCleaner/database_cleaner]
+  gem 'database_cleaner-active_record'
+  gem 'simplecov'
 end
 
 gem 'devise', '~> 4.9'
