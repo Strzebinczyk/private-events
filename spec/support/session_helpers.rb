@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Support
   module SessionHelpers
     def sign_up_with(email, password)
