@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'rails_helper'
 
-RSpec.describe 'User signs up', type: :feature do
+RSpec.describe 'User signs up' do
   scenario 'with valid email and password' do
     sign_up_with 'valid@example.com', 'password'
 

@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-require 'spec_helper'
 require 'rails_helper'
 
-RSpec.describe 'User logs in', type: :feature do
+RSpec.describe 'User logs in' do
   scenario 'with valid email and password' do
     @user1 = create(:user)
     log_in_with @user1.email, @user1.password
